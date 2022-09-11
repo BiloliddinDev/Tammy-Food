@@ -1,0 +1,138 @@
+.bg{
+  border-color:  #fffbf3;;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  margin-bottom: 150px;
+  padding: 25px 0;
+
+  &__blog {
+    position: fixed;
+    top: 25px;
+    display: flex;
+    width: 100%;
+    background-color: #fffbf3;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+    border: 1px solid $yelow;
+    border-radius: 12px;
+  }
+
+  &__silka {
+    text-decoration: none;
+  }
+
+  &__sapn {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: $black;
+  }
+
+  &__logo {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fcc647;
+  }
+
+  &__bars {
+    display: none;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__iteam {
+    margin: 0 20px;
+  }
+
+  &__link {
+    position: relative;
+    @include text-decaration();
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: $black;
+    padding: 0 5px;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      color: $yelow;
+
+      &::after {
+        content: "";
+        width: 100%;
+        left: 0;
+        height: 3px;
+        background-color: $yelow;
+        position: absolute;
+        bottom: 0px;
+
+        &:hover {
+          transition: all 3s;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .header {
+    position: relative;
+    &__silka {
+      margin-left: 10px;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__bars {
+      margin-right: 30px;
+      display: inline-block;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    position: relative;
+    margin-bottom: 80px;
+
+    &__sapn {
+      font-size: 20px;
+    }
+
+    &__logo {
+      font-size: 20px;
+    }
+
+    &__silka {
+      margin-left: 10px;
+    }
+
+    &__list {
+      display: none;
+    }
+    &__bars {
+      margin-right: 15px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
