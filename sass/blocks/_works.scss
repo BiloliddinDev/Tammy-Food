@@ -1,0 +1,22 @@
+.works {
+  text-align: center;
+
+  &__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: $black;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: $darkblask;
+    margin-bottom: 65px;
+  }
+}

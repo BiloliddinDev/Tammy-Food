@@ -754,4 +754,24 @@ template {
     width: 330px;
     height: 200px;
   }
+}
+.works {
+  text-align: center;
+}
+.works__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #3c3c3c;
+  margin-bottom: 30px;
+}
+.works__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #667085;
+  margin-bottom: 65px;
 }/*# sourceMappingURL=main.css.map */
